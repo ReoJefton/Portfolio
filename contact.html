@@ -9,29 +9,56 @@
     </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-        <ul class="topnav">
-          <li><a  href="./index.html">Home</a></li>
-          <!-- <li><a href="#experience">Experience</a></li>
+    <ul class="topnav">
+        <li><a href="./index.html">Home</a></li>
+        <!-- <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#projects">Projects</a></li> -->
 
-          <li class="right"><a class="active" href="./contact.html">Contact</a></li>
-          <li class="right"><a href="./about.html">About</a></li>
-        </ul>
-        
-        <div id="parentDiv">
-            <h1> REO JEFTON</h1>
-            <h2> FULL STACK DEVELOPER</h2>
-            <img src="images/profilepic.JPG" alt="Profile Picture" width="200" height="200">
-            <h3>
-                <a href="mailto:reojefton@outlook.com">reojefton@outlook.com </a>
-                <br>
-                <a href="tel:+15197228671">+15197228671</a>
-                <br>Toronto, Ontario
-                <br><a href="https://github.com/reojefton">https://github.com/reojefton</a>
-                <br><a href="https://www.linkedin.com/in/reojefton">https://www.linkedin.com/in/reojefton </a>
-            </h3>
-        </div>
+        <li class="right"><a class="active" href="./contact.html">Contact</a></li>
+        <li class="right"><a href="./about.html">About</a></li>
+    </ul>
+
+    <div id="parentDiv">
+        <h1> REO JEFTON</h1>
+        <h2> FULL STACK DEVELOPER</h2>
+        <img src="images/profilepic.JPG" alt="Profile Picture" width="200" height="200">
+        <h3>
+            <a href="mailto:reojefton@outlook.com">reojefton@outlook.com </a>
+            <br>
+            <a href="tel:+15197228671">+15197228671</a>
+            <br>Toronto, Ontario
+            <br><a href="https://github.com/reojefton">https://github.com/reojefton</a>
+            <br><a href="https://www.linkedin.com/in/reojefton">https://www.linkedin.com/in/reojefton </a>
+        </h3>
+
+        <h2>Contact me:</h2>
+
+        <form action="/action_page.php">
+            <!-- <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="" placeholder="Enter your first name..."><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="" placeholder="Enter your last name..."><br><br> -->
+
+            <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br> -->
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name..." required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email..." required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" placeholder="Enter your message..."
+                required></textarea><br><br>
+            <input type="submit" value="Send">
+
+        </form>
+
+
+
+    </div>
 </body>
+
 </html>
