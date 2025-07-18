@@ -5,6 +5,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Responsive image scaling */
 img {
     max-width: 100%;
