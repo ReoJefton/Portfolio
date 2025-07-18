@@ -135,6 +135,15 @@ h3 {
     padding: 28px 16px;
 }
 
+/* Center footer content and match #parentDiv padding */
+.footer-content {
+    text-align: center;
+    padding: 32px 24px;
+    margin: 0;
+    /* color: var(--text-color, #fff); */
+    font-size: 1rem;
+}
+
 /* p.center {                      ctrl + /
   text-align: center;
   color: red;
