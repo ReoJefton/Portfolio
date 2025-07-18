@@ -16,15 +16,24 @@
 <script src="theme.js"></script>
 
 <body>
-    <ul class="topnav">
-        <li><a href="./index.html">Home</a></li>
-        <!-- <li><a href="#experience">Experience</a></li>
+    <!-- Top navigation for all links -->
+    <ul class="topNav top-mobile">
+        <li><a class="" href="./index.html">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li> -->
-
-        <li class="right"><a class="active" href="./contact.html">Contact</a></li>
-        <li class="right"><a href="./about.html">About</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li class="right theme-toggle-flex"><button id="themeToggleBtn" class="theme-toggle-btn">🌙</button></li>
+        <li class="mobile-hidden"><a href="./index2.html">HomeV2</a></li>
+        <li class="right mobile-hidden active"><a href="./contact.html">Contact</a></li>
+        <li class="right mobile-hidden"><a href="./about.html">About</a></li>
+    </ul>
+
+    <!-- Bottom navigation: only links with .bottom-mobile class are shown on mobile -->
+    <ul class="bottomNav">
+        <li class="bottom-mobile"><a href="./index2.html">HomeV2</a></li>
+        <li class="bottom-mobile"><a href="./about.html">About</a></li>
+        <li class="bottom-mobile"><a class="active" href="./contact.html">Contact</a></li>
+
     </ul>
     <div id="parentDiv">
         <div class="flexbox-container">
