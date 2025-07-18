@@ -8,10 +8,11 @@
         REO JEFTON - Portfolio
     </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
     <!-- Comment out bootstrap link if not needed -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- Can also style here - avoid and move styles to .CSS file instead -->
+    <!-- Can also add styles here - But avaid this and move styles to external .CSS file instead -->
     <!-- <style>
         body {
             margin: 0;
@@ -30,6 +31,7 @@
 
         <li class="right"><a href="./contact.html">Contact</a></li>
         <li class="right"><a href="./about.html">About</a></li>
+        <li class="right theme-toggle-flex"><button id="themeToggleBtn" class="theme-toggle-btn">🌙</button></li>
     </ul>
     <div id="parentDiv">
         <!-- Bootstrap Grid System - Use flexbox instead of bootstrap for responsive design when possible-->
@@ -93,7 +95,7 @@
 
         <h4 id="experience">PROFESSIONAL EXPERIENCE</h4>
         <p><b>Epicor - Toronto, Canada</b>
-            <br><b>Lead Product Developer |Full Stack |January 2024 - Present</b>
+            <br><b>Lead Product Developer | Full Stack | January 2024 - Present</b>
         </p>
 
         <p><b>Field Service Management (FSM) web portal and MAUI app for Android and iOS</b>
@@ -116,7 +118,7 @@
         </ul>
         <p><b>Bell - Toronto, Canada</b>
             <br>
-            <b>Senior Full Stack Developer | November 2020 December 2023</b>
+            <b>Senior Full Stack Developer | November 2020 - December 2023</b>
         </p>
         <p><b>Consumer sites for Bell Canada and Lucky Mobile, Internal CMS Web portal for Bell Canada</b>
             <br>
@@ -180,7 +182,7 @@
             <li>Contributed to business development by identifying opportunities and working on tender preparation.</li>
         </ul>
         <p><b>NexGen Marketing Group - Waterloo, Canada</b>
-            <br><b>Full Stack Developer - Project Lead | May 2018 December 2018</b>
+            <br><b>Full Stack Developer - Project Lead | May 2018 - December 2018</b>
         </p>
         <p><b>InstaROI -</b> responsive and data-centric web app built to calculate, visualize and compare the return on
             investment on the marketing campaigns of the clients based on historical data and the metrics provided by
@@ -275,9 +277,10 @@
 
         </ul>
     </div>
+    <footer>
+        <p> &copy; 2024 Reo Jefton. All rights reserved.</p>
+    </footer>
+    <script src="theme.js"></script>
 </body>
-
-<!-- Add JS code within the script tag. Best practice to move this to external file  -->
-<!-- <script src="script.js" ></script> -->
 
 </html>
