@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        About
+        REO JEFTON - Portfolio
     </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+    <!-- Comment out bootstrap link if not needed -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="profileDataScript.js" defer></script>
+    <!-- Can also add styles here - But avaid this and move styles to external .CSS file instead -->
+    <!-- <style>
+        body {
+            margin: 0;
+        }
+    </style> -->
     <script src="script.js" defer></script>
 </head>
-<link rel="stylesheet" href="theme.css">
-<script src="theme.js"></script>
 
 <body>
     <!-- Top navigation for all links -->
     <ul class="topNav top-mobile">
-        <li><a class="" href="./index.html">Home</a></li>
+        <li><a class="mobile-hidden" href="./index.html">Home</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -31,13 +36,259 @@
 
     <!-- Bottom navigation: only links with .bottom-mobile class are shown on mobile -->
     <ul class="bottomNav">
-        <li class="bottom-mobile"><a class="active" href="./index2.html">HomeV2</a></li>
+        <li class="bottom-mobile"><a href="./index.html">Home</a></li>
         <li class="bottom-mobile"><a href="./about.html">About</a></li>
         <li class="bottom-mobile"><a href="./contact.html">Contact</a></li>
     </ul>
-    <div id="parentDiv">
-    </div>
 
+    <div id="parentDiv">
+        <!-- Bootstrap Grid System - Use flexbox instead of bootstrap for responsive design when possible-->
+        <!-- <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+            </div>
+        </div> -->
+        <div class="flexbox-container">
+            <div class="flexbox-container2">
+                <!-- inline styling - avoid and move styles to .CSS file instead -->
+                <h1 class="header1" id="home" style="padding: 0px 0px;">REO JEFTON</h1>
+                <h2 class="header2">FULL STACK DEVELOPER</h2>
+            </div>
+            <div class="flexbox-container2">
+                <img class="profile-pic" src="images/profilepic.JPG" alt="Profile Picture" width="100" height="100">
+            </div>
+        </div>
+        <h3>
+            <a href="mailto:reojefton@outlook.com">reojefton@outlook.com </a>
+            <br>
+            <a href="tel:+15197228671">+15197228671</a>
+            <br>Toronto, Ontario
+            <br><a href="https://github.com/reojefton">https://github.com/reojefton</a>
+            <br><a href="https://www.linkedin.com/in/reojefton">https://www.linkedin.com/in/reojefton </a>
+        </h3>
+        <p>Adept Full Stack Developer with over 7 years of experience in Web and Database development. Have successfully
+            led, managed and collaborated with teams to deliver high-quality solutions that meet clients’ needs and
+            expectations. Have a passion for learning new skills, staying updated with the latest trends and
+            implementing
+            the best practices in my developer workflow.
+        </p>
+
+        <h4>TECHNICAL SKILLS</h4>
+        <ul>
+            <li><b>Front End Web Development -</b> React, Redux, HTML, CSS, JavaScript/ES6, TypeScript,jQuery,
+                Bootstrap,
+                Angular, Shopify, WordPress, MaterialUI, JSON, XML, SASS/SCSS,Accessibility - WCAG 2.0+, SEO, Adobe
+                Target
+                and Adobe Analytics.
+            </li>
+            <li><b>Back End Web Development -</b> Node.js, ASP.NET core MVC, C#, .NET, REST API, Microservices, OAuth,
+                Auth0
+            </li>
+            <li><b>Web Frameworks -</b> Next.js, MERN, MEAN, ASP.NET Core</li>
+            <li><b>Cloud Computing -</b> Microsoft Azure services like Azure Active Directory, Load Balancer and Auto
+                scale,
+                Web Services, Edge functions and Blobs, AWS services like EC2, S3, Aurora,Batch and Lambda.</li>
+            <li><b>DevOps -</b> Azure DevOps, Jenkins, Docker, Kubernetes, CI/CD</li>
+            <li><b>Mobile Development -</b> React Native (Android, iOS and Windows), Android native and Windows UWP/
+                WinUI,
+                MAUI (Android, iOS and Windows)
+                IDE -</b> Visual Studio Code, Visual Studio, Android Studio</li>
+            <li><b>Database Development -</b> Microsoft SQL Server, MySQL, MongoDB, SSRS, SSIS, Azure SQL, PostgreSQL
+            </li>
+            <li><b>Other Skills -</b> Agile and Waterfall SDLC methodologies, Salesforce, Test-Driven Development,Git,
+                UI
+                and UX Design and prototyping (Figma, Adobe XD and InVision), Project Management</li>
+        </ul>
+
+        <h4 id="experience">PROFESSIONAL EXPERIENCE</h4>
+        <p><b>Epicor - Toronto, Canada</b>
+            <br><b>Lead Product Developer | Full Stack | January 2024 - Present</b>
+        </p>
+
+        <p><b>Field Service Management (FSM) web portal and MAUI app for Android and iOS</b>
+            <br>
+            <b>Tech Stack:</b> ASP.NET Core MVC, jQuery, React, Azure, Microservices Architecture, REST API, SQL Server
+            <br>
+            <b>Roles:</b>
+        </p>
+        <ul>
+            <li>Design, develop features and perform optimizations for FSM web site using ASP.NET MVC framework.</li>
+            <li>Analyze and implement detailed design specifications, provide feedback, and independently perform the
+                work
+                required from the design.</li>
+            <li>Analyze requirements and clarify scope of work tasks with Business Analysts and Product Managers.</li>
+            <li>Communicate with quality assurance to validate work delivered and work quality.</li>
+            <li>Review code and pull requests from other developers.</li>
+            <li>Perform accessibility and code optimizations based on evaluations to maintain web vitals.</li>
+            <li>Utilize Azure services for cloud-based application deployment, scaling, and monitoring.</li>
+            <li>Develop UI and implement features FSM MAUI mobile app for Android and iOS.</li>
+        </ul>
+        <p><b>Bell - Toronto, Canada</b>
+            <br>
+            <b>Senior Full Stack Developer | November 2020 - December 2023</b>
+        </p>
+        <p><b>Consumer sites for Bell Canada and Lucky Mobile, Internal CMS Web portal for Bell Canada</b>
+            <br>
+            <b>Tech Stack:</b> React, jQuery, Node.js, .NET Core, Microservices Architecture, DevOps, REST API,SQL
+            Server</b>
+            <br>
+            <b>Roles:</b>
+        </p>
+        <ul>
+            <li>Design and develop features in front end - pages, components and widgets using React,AngularJS, CSHTML
+                and
+                jQuery based on mockups.</li>
+            <li>Develop and optimize back-end services, web APIs and microservices using OpenAPI and ASP.NET Web API.
+            </li>
+            <li>Scaling web services and enhancing performance and security of APIs.</li>
+            <li>Analyzing business requirements and proactively providing ideas to improve proposed solutions.</li>
+            <li>Ensure code quality through unit testing and automated functional testing in an agile environment.</li>
+            <li>Drive architecture and execute Bell technical strategy.</li>
+            <li>Project management using Salesforce CMS and Jira.</li>
+            <li>Consult with clients and other technology groups on issues, recommend advanced programming solutions and
+                actively propose improvements.</li>
+            <li>Troubleshoot and debug production issues and provide timely resolutions.</li>
+            <li>Developing and refining CI/CD pipelines, participating in deployment and release activities.</li>
+        </ul>
+        <p><b>ISN Technologies - Waterloo, Canada</b>
+            <br>
+            <b>Full Stack Developer - Team Lead | January 2019 - October 2020</b>
+        </p>
+
+        <p><b>Now Management Studio -</b> Web based CMS to manage automated systems in real-time by providing data
+            collection, analysis, and performance monitoring of client systems with features suchas resource and
+            inventory
+            management, scheduling, timesheet, billing, expense sheet and projectmanagement.
+            <br>
+            <b>Tech Stack:</b> React, Angular, Node.js, .NET Core, Microservices Architecture, REST API, SQL Server,
+            MongoDB, AWS
+            <br>
+            <b>WARS -</b> Data warehouse, data migration and Business Intelligence for Allianz Insurance
+            <br>
+            <b>Tech Stack:</b> C#, SQL Server, SSRS, SSIS, Azure DevOps, Power BI
+            <br>
+            <b>Shopify ecommerce site -</b> Customize site to suite brand and add functionality using add-ons.
+            <br>
+            <b>Roles:</b>
+        </p>
+        <ul>
+            <li>Develop, implement new features and maintain existing programs in both front-end using React and
+                Angular.
+            </li>
+            <li>Develop back-end services using Node.js, C#, ASP.NET Core SQL Server queries and stored procedures.</li>
+            <li>Work on REST APIs and microservices, securing and optimizing them.</li>
+            <li>Run DevOps operations like managing Azure boards, setting up repos and pipelines for build in Azure
+                DevOps.
+            </li>
+            <li>Design MS SQL tables, queries, stored procedures and optimize queries for better performance and
+                efficiency.
+            </li>
+            <li>Managed and supported the team of software engineering staff by organizing functional and technical
+                sessions
+                to ramp up the team skills.</li>
+            <li>Contributed to business development by identifying opportunities and working on tender preparation.</li>
+        </ul>
+        <p><b>NexGen Marketing Group - Waterloo, Canada</b>
+            <br><b>Full Stack Developer - Project Lead | May 2018 - December 2018</b>
+        </p>
+        <p><b>InstaROI -</b> responsive and data-centric web app built to calculate, visualize and compare the return on
+            investment on the marketing campaigns of the clients based on historical data and the metrics provided by
+            the
+            end user.
+            <br><b>Tech Stack:</b> ASP.NET core MVC, React, Microsoft Azure, SQL Server
+            <br><b>Roles:</b>
+        </p>
+        <ul>
+            <li>Engage with stakeholders to gather requirements, delegate tasks, manage team and provide updates to
+                client.
+            </li>
+            <li>Design architecture, develop features (entire ASP.NET core MVC website and SQL database) and hosting in
+                Azure (Azure app service, Blobs and Azure SQL).</li>
+        </ul>
+        <p><b>Bizinfe - Nagercoil, India</b>
+            <br><b>Intermediate Software Developer | May 2016 - September 2017</b>
+        </p>
+        <p><b>Tech Stack:</b> HTML, CSS, Bootstrap, Angular, Node.js, ASP .NET, JavaScript, jQuery, AJAX, SQL Server,
+            MySQL
+            <br><b>Roles:</b>
+        </p>
+        <ul>
+            <li>Create responsive websites for clients based on the requirements and work on Bizinfe website.</li>
+            <li>Design UI/UX mockups and wireframes, develop front end pages and components.</li>
+            <li>Work on API development, database design, writing queries and stored procedures.</li>
+            <li>Write scripts using Perl and Shell to automate tasks.</li>
+            <li>Code optimization, testing, integration and performance analysis.</li>
+        </ul>
+        <h4 id="education">EDUCATION</h4>
+        <ul>
+            <li><b>Computer Application Security</b>
+                <br><b>Conestoga College - Kitchener, Canada</b>| May 2018 - December 2018</p>
+            </li>
+            <li><b>Computer Application Development</b>
+                <br><b>Conestoga College - Kitchener, Canada</b> | September 2017 - April 2018
+                </p>
+            </li>
+            <li><b>Bachelor's in Engineering - Computer Science</b>
+                <br><b>National Engineering college - Kovilpatti, India</b> | June 2012 - May 2016
+                </p>
+            </li>
+        </ul>
+        <h4 id="projects">PROJECTS</h4>
+        <ul>
+            <li><b>Social Network Web App -</b> MERN stack, React, Redux, Node.js, MongoDB, Heroku,MaterialUI
+                <br>
+                <a href="https://github.com/ReoJefton/ReoSocial">https://github.com/ReoJefton/ReoSocial</a><br>
+            </li>
+
+            <li><b>Noorul Islam Polytechnic College Website -</b> Next.js, Tailwind CSS, TypeScript
+                <br>
+                <a href="https://nipc.in/">https://nipc.in/</a><br>
+            </li>
+
+            <li><b>InstaROI and Kinetic GPO PWA (NexGen Marketing Group)</b>
+                <br>ASP.NET core MVC, React, Microsoft Azure, SQL Server
+                <br>
+                <a
+                    href="https://github.com/ReoJefton/InstaROI-NetCoreWeb">https://github.com/ReoJefton/InstaROI-NetCoreWeb</a><br>
+            </li>
+
+            <li><b>WellBeings -</b> .NET Core Web App
+                <br>C#, ASP.Net Core MVC, Entity Framework
+                <br>
+                <a
+                    href="https://github.com/reojefton/WellBeings-NetCoreApp">https://github.com/reojefton/WellBeings-NetCoreApp</a><br>
+            </li>
+
+            <li><b>Now management Studio - CMS (ISN Technologies)</b>
+                <br>React, Angular, Node.js, .NET Core, Microservices Architecture, REST API, SQL Server, MongoDB, AWS
+            </li>
+
+            <li><b>Web Portfolio -</b> HTML, CSS, JS, GitHub Pages, PWA
+                <br>
+                <a href="https://reojefton.github.io/PortfolioRJ/">https://reojefton.github.io/PortfolioRJ/</a><br>
+            </li>
+
+            <li><b>Conestoga Portal UWP App -</b> Access web portals and take notes with built-in password manager
+                <br>C#, .NET Core, SQL Server
+                <br>
+                <a
+                    href="https://www.microsoft.com/en-ca/p/conestoga-portal/9p45t4g9gqf3?activetab=pivot:overviewtab">https://www.microsoft.com/en-ca/p/conestoga-portal/9p45t4g9gqf3?activetab=pivot:overviewtab</a><br>
+            </li>
+
+            <li><b>10Launcher -</b> Chromium extension to access and manage recently visited sites and favorites
+                <br>React, HTML, CSS, Bootstrap, JavaScript, TypeScript
+                <br>
+                <a
+                    href="https://microsoftedge.microsoft.com/addons/detail/10launcher/lohfjfafljfmninkapddiidjinilohkc">https://microsoftedge.microsoft.com/addons/detail/10launcher/lohfjfafljfmninkapddiidjinilohkc</a><br>
+            </li>
+
+        </ul>
+    </div>
+    <footer>
+        <p class="footer-content">&copy; 2024 Reo Jefton. All rights reserved.</p>
+    </footer>
+    <script src="theme.js"></script>
 </body>
 
 </html>
