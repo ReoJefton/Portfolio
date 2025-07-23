@@ -12,7 +12,8 @@ body {
 }
 
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth;
+    scroll-padding-top: 90px; */
 }
 
 /* Responsive image scaling */
@@ -62,6 +63,7 @@ ul.bottomNav {
 ul.topNav li,
 ul.bottomNav li {
     float: left;
+    height: 48px;
 }
 
 ul.topNav li a,
