@@ -10,12 +10,17 @@ body.dark-theme {
 .dark-theme a,
 .dark-theme .topnav a {
     color: #f1f1f1 !important;
+    /* color: var(--accent-green) !important; */
 }
 
 .dark-theme .header1,
 .dark-theme .header2 {
     color: #f1f1f1;
 }
+
+/* .dark-theme h3 {
+    color: var(--accent-green) !important;
+} */
 
 .dark-theme .profile-pic {
     border: 2px solid #f1f1f1;
