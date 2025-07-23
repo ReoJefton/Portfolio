@@ -60,10 +60,14 @@ ul.bottomNav {
     border: none;
 }
 
-ul.topNav li,
+ul.topNav li {
+    float: left;
+    height: 45px;
+}
+
 ul.bottomNav li {
     float: left;
-    height: 48px;
+    height: 45px;
 }
 
 ul.topNav li a,
