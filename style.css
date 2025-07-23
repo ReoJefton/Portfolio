@@ -46,6 +46,20 @@ body {
     background-color: #f4f4f4;
 }
 
+.li-app-name {
+    display: flex;
+}
+
+.app-name {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #04AA6D;
+    text-decoration: none;
+    padding: 0px 16px;
+    /* font-size: 22px; */
+    margin: auto;
+}
+
 ul.topNav,
 ul.bottomNav {
     position: fixed;
