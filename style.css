@@ -108,7 +108,8 @@ ul.bottomNav li a:hover:not(.active) {
 
 ul.topNav li a.active,
 ul.bottomNav li a.active {
-    background-color: #04AA6D;
+    /* background-color: #04AA6D; */
+    background-color: var(--accent-green);
     /* font-weight: 600; */
 }
 
