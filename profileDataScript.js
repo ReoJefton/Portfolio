@@ -23,7 +23,7 @@ fetch('profileData.json')
         <a href="${data.linkedin}">${data.linkedin}</a>
       </h3>
       <p>${data.summary}</p>
-      <section id="skills" class="accordion-section">
+      <section id="skills" class="accordion-section card">
         <button class="accordion-toggle" type="button">
           <span class="accordion-arrow">&#9650;</span>
           <h4>TECHNICAL SKILLS</h4>
@@ -40,7 +40,7 @@ fetch('profileData.json')
 
     // Experience Section Accordion
     if (data.experience && data.experience.length > 0) {
-      html += `<section id="experience" class="accordion-section">
+      html += `<section id="experience" class="accordion-section card">
         <button class="accordion-toggle" type="button">
           <span class="accordion-arrow">&#9650;</span>
           <h4>PROFESSIONAL EXPERIENCE</h4>
@@ -71,7 +71,7 @@ fetch('profileData.json')
 
     // Education Section Accordion
     if (data.education && data.education.length > 0) {
-      html += `<section id="education" class="accordion-section">
+      html += `<section id="education" class="accordion-section card">
         <button class="accordion-toggle" type="button">
           <span class="accordion-arrow">&#9650;</span>
           <h4>EDUCATION</h4>
@@ -85,7 +85,7 @@ fetch('profileData.json')
 
     // Projects Section Accordion
     if (data.projects && data.projects.length > 0) {
-      html += `<section id="projects" class="accordion-section">
+      html += `<section id="projects" class="accordion-section card">
         <button class="accordion-toggle" type="button">
           <span class="accordion-arrow">&#9650;</span>
           <h4>PROJECTS</h4>

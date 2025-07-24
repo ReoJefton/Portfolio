@@ -1,3 +1,13 @@
+/* Card styling for accordion sections */
+.card {
+    /* background: #fff; */
+    border-radius: 5px;
+    box-shadow: 0 4px 24px rgba(238, 42, 123, 0.10), 0 1.5px 6px rgba(0, 0, 0, 0.04);
+    padding: 20px 20px;
+    margin-bottom: 32px;
+    border: 1.5px solid var(--accent-green);
+}
+
 /* Accent color variable */
 :root {
     --accent-green: #04AA6D;
