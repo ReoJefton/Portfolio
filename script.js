@@ -95,3 +95,28 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+document.addEventListener('DOMContentLoaded', function () {
+    // Accent color swatch click logic
+    var colorPicker = document.getElementById('accentColorPicker');
+    var swatchContainer = document.getElementById('accentColorSwatches');
+    if (swatchContainer && colorPicker) {
+        swatchContainer.querySelectorAll('.accent-swatch').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var color = window.getComputedStyle(btn).backgroundColor;
+                // Convert rgb to hex if needed
+                function rgbToHex(rgb) {
+                    var result = rgb.match(/\d+/g);
+                    if (!result) return rgb;
+                    return "#" + result.map(function (x) {
+                        var hex = parseInt(x).toString(16);
+                        return hex.length === 1 ? "0" + hex : hex;
+                    }).join("");
+                }
+                var hex = btn.title || rgbToHex(color);
+                document.documentElement.style.setProperty('--accent-green', hex);
+                colorPicker.value = hex;
+                localStorage.setItem('accentColor', hex);
+            });
+        });
+    }
+});
