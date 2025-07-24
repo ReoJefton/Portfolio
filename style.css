@@ -21,6 +21,10 @@ html {
     scroll-padding-top: 90px; */
 }
 
+a {
+    color: #000000;
+}
+
 /* Responsive image scaling */
 img {
     max-width: 100%;
