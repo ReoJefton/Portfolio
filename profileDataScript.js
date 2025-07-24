@@ -28,7 +28,7 @@ fetch('profileData.json')
           <span class="accordion-arrow">&#9650;</span>
           <h4>TECHNICAL SKILLS</h4>
         </button>
-        <div class="accordion-content" style="display:block;">
+        <div class="accordion-content open">
           <ul>
             ${data.skills.map(skillCat => `
               <li><b>${skillCat.title} -</b> ${skillCat.skills.join(', ')}.</li>
@@ -45,7 +45,7 @@ fetch('profileData.json')
           <span class="accordion-arrow">&#9650;</span>
           <h4>PROFESSIONAL EXPERIENCE</h4>
         </button>
-        <div class="accordion-content" style="display:block;">`;
+        <div class="accordion-content open">`;
       data.experience.forEach(exp => {
         html += `<p><b>${exp.companyName}</b> <span style="font-weight:400;">(${exp.city}, ${exp.country})</span><br>`;
         html += `<b>${exp.designation}</b> | <span>${exp.startDate} - ${exp.endDate}</span></p>`;
@@ -76,7 +76,7 @@ fetch('profileData.json')
           <span class="accordion-arrow">&#9650;</span>
           <h4>EDUCATION</h4>
         </button>
-        <div class="accordion-content" style="display:block;"><ul>`;
+        <div class="accordion-content open"><ul>`;
       data.education.forEach(edu => {
         html += `<li><b>${edu.degree}</b><br><b>${edu.institutionName}</b> <span style="font-weight:400;">(${edu.province}, ${edu.country})</span> | ${edu.period}</li>`;
       });
@@ -90,7 +90,7 @@ fetch('profileData.json')
           <span class="accordion-arrow">&#9650;</span>
           <h4>PROJECTS</h4>
         </button>
-        <div class="accordion-content" style="display:block;"><ul>`;
+        <div class="accordion-content open"><ul>`;
       data.projects.forEach(proj => {
         html += `<li><b>${proj.name}</b> - ${proj.description}`;
         if (Array.isArray(proj.techStack)) {
@@ -111,11 +111,13 @@ fetch('profileData.json')
       btn.addEventListener('click', function () {
         const content = this.nextElementSibling;
         const arrow = this.querySelector('.accordion-arrow');
-        if (content.style.display === 'none' || content.style.display === '') {
-          content.style.display = 'block';
+        if (!content.classList.contains('open')) {
+          content.classList.add('open');
+          content.style.maxHeight = content.scrollHeight + 'px';
           if (arrow) arrow.innerHTML = '&#9650;'; // Up arrow
         } else {
-          content.style.display = 'none';
+          content.classList.remove('open');
+          content.style.maxHeight = '0px';
           if (arrow) arrow.innerHTML = '&#9660;'; // Down arrow
         }
       });
@@ -123,9 +125,11 @@ fetch('profileData.json')
       const content = btn.nextElementSibling;
       const arrow = btn.querySelector('.accordion-arrow');
       if (content && arrow) {
-        if (content.style.display === 'none' || content.style.display === '') {
+        if (!content.classList.contains('open')) {
+          content.style.maxHeight = '0px';
           arrow.innerHTML = '&#9660;'; // Down arrow
         } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
           arrow.innerHTML = '&#9650;'; // Up arrow
         }
       }
