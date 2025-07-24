@@ -14,6 +14,7 @@ body {
     word-break: break-word;
     min-height: 100vh;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 1.428;
 }
 
 html {
