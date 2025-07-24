@@ -35,12 +35,18 @@ fetch('profileData.json')
     if (data.experience && data.experience.length > 0) {
       html += `<h4 id="experience">PROFESSIONAL EXPERIENCE</h4>`;
       data.experience.forEach(exp => {
-        html += `<p><b>${exp.companyName}</b> <span style="font-weight:400;">(${exp.province}, ${exp.country})</span><br>`;
+        html += `<p><b>${exp.companyName}</b> <span style="font-weight:400;">(${exp.city}, ${exp.country})</span><br>`;
         html += `<b>${exp.designation}</b> | <span>${exp.startDate} - ${exp.endDate}</span></p>`;
         if (exp.projects && exp.projects.length > 0) {
           exp.projects.forEach(proj => {
             html += `<p><b>${proj.name}</b>`;
-            if (proj.techStack) html += `<br><b>Tech Stack:</b> ${proj.techStack}`;
+            if (proj.techStack) {
+              if (Array.isArray(proj.techStack)) {
+                html += `<br><b>Tech Stack:</b> ${proj.techStack.join(', ')}`;
+              } else {
+                html += `<br><b>Tech Stack:</b> ${proj.techStack}`;
+              }
+            }
             html += `</p>`;
           });
         }
@@ -54,7 +60,7 @@ fetch('profileData.json')
     if (data.education && data.education.length > 0) {
       html += `<h4 id="education">EDUCATION</h4><ul>`;
       data.education.forEach(edu => {
-        html += `<li><b>${edu.degree}</b><br><b>${edu.institution}</b> | ${edu.period}</li>`;
+        html += `<li><b>${edu.degree}</b><br><b>${edu.institutionName}</b> <span style="font-weight:400;">(${edu.province}, ${edu.country})</span> | ${edu.period}</li>`;
       });
       html += `</ul>`;
     }
@@ -64,7 +70,11 @@ fetch('profileData.json')
       html += `<h4 id="projects">PROJECTS</h4><ul>`;
       data.projects.forEach(proj => {
         html += `<li><b>${proj.name}</b> - ${proj.description}`;
-        if (proj.techStack) html += `<br><b>Tech Stack:</b> ${proj.techStack}`;
+        if (Array.isArray(proj.techStack)) {
+          html += `<br><b>Tech Stack:</b> ${proj.techStack.join(', ')}`;
+        } else {
+          html += `<br><b>Tech Stack:</b> ${proj.techStack}`;
+        }
         if (proj.link) html += `<br><a href="${proj.link}">${proj.link}</a>`;
         html += `</li>`;
       });
