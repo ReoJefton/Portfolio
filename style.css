@@ -42,6 +42,9 @@ img {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
+    /* Prevent #parentDiv from overlapping navbar */
+    margin-top: 60px;
+    min-height: 85vh;
 }
 
 /* Responsive navigation */
@@ -122,12 +125,6 @@ ul.topNav li.right,
 ul.bottomNav li.right {
     float: right;
 }
-
-/* Prevent #parentDiv from overlapping navbar */
-#parentDiv {
-    margin-top: 60px;
-}
-
 
 h1,
 h2,
