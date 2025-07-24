@@ -2,6 +2,9 @@
 :root {
     /* --accent-green: #04AA6D; */
     --accent-green: #1DB954;
+
+    --modal-bg: rgba(0, 0, 0, 0.3);
+    --modal-content-bg: #fff;
 }
 
 /* Import Roboto font from Google Fonts */
@@ -402,17 +405,55 @@ h4 {
     color: inherit;
 }
 
-#accentColorPicker {
-    position: absolute;
-    z-index: 9999;
-    top: 0px;
-    opacity: 0;
-    pointer-events: none;
-    transition: top 0.2s, opacity 0.2s;
+/* Accent Color Picker Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--modal-bg, rgba(0, 0, 0, 0.3));
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
 }
 
-#accentColorPicker.active {
-    /* top: 45px; */
-    opacity: 1;
-    pointer-events: auto;
+.modal-content {
+    background: var(--modal-content-bg, #fff);
+    padding: 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content label {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+#accentColorPicker {
+    width: 48px;
+    height: 48px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#closeAccentModal {
+    margin-top: 18px;
+    padding: 6px 18px;
+    border-radius: 6px;
+    border: none;
+    background: var(--accent-green);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+body.dark-theme {
+    --modal-bg: rgba(0, 0, 0, 0.7);
+    --modal-content-bg: #222;
 }

@@ -1,7 +1,6 @@
 // Accent color picker functionality
 // Self-invoking anonymous function - syntax
 (function () {
-    var accentBtn = document.getElementById('accentColorBtn');
     var colorPicker = document.getElementById('accentColorPicker');
     // Set initial color from localStorage or default
     var savedColor = localStorage.getItem('accentColor');
@@ -9,10 +8,7 @@
     var accentColor = savedColor || defaultColor;
     document.documentElement.style.setProperty('--accent-green', accentColor);
     if (colorPicker) colorPicker.value = accentColor;
-    if (accentBtn && colorPicker) {
-        accentBtn.addEventListener('click', function () {
-            colorPicker.click();
-        });
+    if (colorPicker) {
         colorPicker.addEventListener('input', function () {
             document.documentElement.style.setProperty('--accent-green', colorPicker.value);
             localStorage.setItem('accentColor', colorPicker.value);
@@ -72,4 +68,30 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    var accentBtn = document.getElementById('accentColorBtn');
+    var modal = document.getElementById('accentColorModal');
+    var closeBtn = document.getElementById('closeAccentModal');
+    if (accentBtn && modal && closeBtn) {
+        accentBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            modal.style.display = 'flex';
+        });
+        closeBtn.addEventListener('click', function () {
+            modal.style.display = 'none';
+        });
+        // Hide modal on outside click
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+        // Hide modal on Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                modal.style.display = 'none';
+            }
+        });
+    }
 });
