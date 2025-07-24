@@ -26,3 +26,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+// Clicking a section link in the navbar opens the corresponding accordion if it is not already open.
+document.addEventListener('DOMContentLoaded', function () {
+    const sectionLinks = [
+        { id: 'skills', selector: 'a[href="#home"]' },
+        { id: 'experience', selector: 'a[href="#experience"]' },
+        { id: 'education', selector: 'a[href="#education"]' },
+        { id: 'projects', selector: 'a[href="#projects"]' }
+    ];
+    sectionLinks.forEach(({ id, selector }) => {
+        const link = document.querySelector(selector);
+        if (link) {
+            link.addEventListener('click', function (e) {
+                setTimeout(() => {
+                    const section = document.getElementById(id);
+                    if (section) {
+                        const btn = section.querySelector('.accordion-toggle');
+                        const content = section.querySelector('.accordion-content');
+                        if (btn && content && !content.classList.contains('open')) {
+                            btn.click();
+                        }
+                    }
+                }, 100);
+            });
+        }
+    });
+});
