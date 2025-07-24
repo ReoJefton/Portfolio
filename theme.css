@@ -26,28 +26,6 @@ body.dark-theme {
     border: 2px solid #f1f1f1;
 }
 
-/* Theme Toggle Button Styles */
-.theme-toggle-btn,
-.download-btn {
-    height: 100%;
-    /* width: 44px; */
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5em;
-    /* margin: 5px; */
-    transition: background 0.2s;
-    color: inherit;
-}
-
-.topnav .theme-toggle-btn,
-.topnav .download-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
 /* Toggle button background based on current theme */
 /*body.dark-theme .theme-toggle-btn {
     background: #222;

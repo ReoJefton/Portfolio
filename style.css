@@ -1,6 +1,7 @@
 /* Accent color variable */
 :root {
-    --accent-green: #04AA6D;
+    /* --accent-green: #04AA6D; */
+    --accent-green: #1DB954;
 }
 
 /* Import Roboto font from Google Fonts */
@@ -67,7 +68,8 @@ body {
 .app-name {
     font-weight: 600;
     font-size: 1.2em;
-    color: #04AA6D;
+    /* /* color: #04AA6D; */
+    color: var(--accent-green);
     text-decoration: none;
     padding: 0px 16px;
     /* font-size: 22px; */
@@ -382,4 +384,29 @@ h4 {
     .bottomNav {
         display: none !important;
     }
+}
+
+
+/* Theme Toggle Button and other navbar button styles */
+.theme-toggle-btn,
+.download-btn,
+.accent-color-btn {
+    height: 100%;
+    /* width: 44px; 
+    margin: 5px; */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background 0.2s;
+    color: inherit;
+}
+
+#accentColorPicker {
+    /* display: none; */
+    position: absolute;
+    z-index: 9999;
+    width: 0px;
+    height: 0px;
+    top: -5px;
 }

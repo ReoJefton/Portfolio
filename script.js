@@ -1,3 +1,23 @@
+// Accent color picker functionality
+(function () {
+    var accentBtn = document.getElementById('accentColorBtn');
+    var colorPicker = document.getElementById('accentColorPicker');
+    // Set initial color from localStorage or default
+    var savedColor = localStorage.getItem('accentColor');
+    var defaultColor = '#04AA6D';
+    var accentColor = savedColor || defaultColor;
+    document.documentElement.style.setProperty('--accent-green', accentColor);
+    if (colorPicker) colorPicker.value = accentColor;
+    if (accentBtn && colorPicker) {
+        accentBtn.addEventListener('click', function () {
+            colorPicker.click();
+        });
+        colorPicker.addEventListener('input', function () {
+            document.documentElement.style.setProperty('--accent-green', colorPicker.value);
+            localStorage.setItem('accentColor', colorPicker.value);
+        });
+    }
+})();
 // Download Resume Button functionality
 document.addEventListener('DOMContentLoaded', function () {
     var downloadBtn = document.getElementById('downloadResumeBtn');
