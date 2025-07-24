@@ -251,10 +251,16 @@ h4 {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #fff;
-    box-shadow: 0 0 0 4px #ee2a7b, 0 2px 12px rgba(238, 42, 123, 0.10);
-    background: linear-gradient(135deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%);
-}
+    /* Instagram-style */
+    /* box-shadow: 0 0 0 4px #ee2a7b, 0 2px 12px rgba(238, 42, 123, 0.10);
+    background: linear-gradient(135deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%); */
+    /* Green-style */
+    /* box-shadow: 0 0 0 4px #04AA6D, 0 2px 12px rgba(4, 170, 109, 0.10);
+    background: linear-gradient(135deg, #f9ce34 0%, #04AA6D 50%, #6228d7 100%); */
 
+    box-shadow: 0 0 0 4px var(--accent-green), 0 2px 12px rgba(4, 170, 109, 0.10);
+    background: linear-gradient(135deg, #f9ce34 0%, var(--accent-green) 50%, #6228d7 100%);
+}
 
 /* @media (min-width: 481px) and (max-width: 600px) {
 
