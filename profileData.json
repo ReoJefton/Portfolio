@@ -44,8 +44,12 @@
   ],
   "experience": [
     {
-      "company": "Epicor - Toronto, Canada",
-      "role": "Lead Product Developer | Full Stack | January 2024 - Present",
+      "companyName": "Epicor",
+      "province": "Toronto",
+      "country": "Canada",
+      "designation": "Lead Product Developer | Full Stack",
+      "startDate": "January 2024",
+      "endDate": "Present",
       "projects": [
         {
           "name": "Field Service Management (FSM) web portal and MAUI app for Android and iOS",
@@ -64,8 +68,12 @@
       ]
     },
     {
-      "company": "Bell - Toronto, Canada",
-      "role": "Senior Full Stack Developer | November 2020 - December 2023",
+      "companyName": "Bell",
+      "province": "Toronto",
+      "country": "Canada",
+      "designation": "Senior Full Stack Developer",
+      "startDate": "November 2020",
+      "endDate": "December 2023",
       "projects": [
         {
           "name": "Consumer sites for Bell Canada and Lucky Mobile, Internal CMS Web portal for Bell Canada",
@@ -86,8 +94,12 @@
       ]
     },
     {
-      "company": "ISN Technologies - Waterloo, Canada",
-      "role": "Full Stack Developer - Team Lead | January 2019 - October 2020",
+      "companyName": "ISN Technologies",
+      "province": "Waterloo",
+      "country": "Canada",
+      "designation": "Full Stack Developer - Team Lead",
+      "startDate": "January 2019",
+      "endDate": "October 2020",
       "projects": [
         {
           "name": "Now Management Studio",
@@ -113,8 +125,12 @@
       ]
     },
     {
-      "company": "NexGen Marketing Group - Waterloo, Canada",
-      "role": "Full Stack Developer - Project Lead | May 2018 - December 2018",
+      "companyName": "NexGen Marketing Group",
+      "province": "Waterloo",
+      "country": "Canada",
+      "designation": "Full Stack Developer - Project Lead",
+      "startDate": "May 2018",
+      "endDate": "December 2018",
       "projects": [
         {
           "name": "InstaROI",
@@ -127,8 +143,12 @@
       ]
     },
     {
-      "company": "Bizinfe - Nagercoil, India",
-      "role": "Intermediate Software Developer | May 2016 - September 2017",
+      "companyName": "Bizinfe",
+      "province": "Nagercoil",
+      "country": "India",
+      "designation": "Intermediate Software Developer",
+      "startDate": "May 2016",
+      "endDate": "September 2017",
       "projects": [
         {
           "name": "General",
