@@ -403,10 +403,16 @@ h4 {
 }
 
 #accentColorPicker {
-    /* display: none; */
     position: absolute;
     z-index: 9999;
-    width: 0px;
-    height: 0px;
-    top: -5px;
+    top: 0px;
+    opacity: 0;
+    pointer-events: none;
+    transition: top 0.2s, opacity 0.2s;
+}
+
+#accentColorPicker.active {
+    /* top: 45px; */
+    opacity: 1;
+    pointer-events: auto;
 }

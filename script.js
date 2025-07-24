@@ -1,5 +1,5 @@
 // Accent color picker functionality
-// Self-invoking anonymous function
+// Self-invoking anonymous function - syntax
 (function () {
     var accentBtn = document.getElementById('accentColorBtn');
     var colorPicker = document.getElementById('accentColorPicker');
