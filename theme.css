@@ -27,7 +27,8 @@ body.dark-theme {
 }
 
 /* Theme Toggle Button Styles */
-.theme-toggle-btn {
+.theme-toggle-btn,
+.download-btn {
     height: 100%;
     /* width: 44px; */
     background: transparent;
@@ -39,7 +40,8 @@ body.dark-theme {
     color: inherit;
 }
 
-.topnav .theme-toggle-btn {
+.topnav .theme-toggle-btn,
+.topnav .download-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +60,8 @@ body:not(.dark-theme) .theme-toggle-btn {
 } */
 
 /* Flexbox wrapper for theme toggle button */
-.theme-toggle-flex {
+.theme-toggle-flex,
+.download-flex {
     display: flex;
     align-items: center;
     justify-content: center;

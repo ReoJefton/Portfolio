@@ -1,3 +1,17 @@
+// Download Resume Button functionality
+document.addEventListener('DOMContentLoaded', function () {
+    var downloadBtn = document.getElementById('downloadResumeBtn');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', function () {
+            const link = document.createElement('a');
+            link.href = 'Reo%20JeftonResume%20Doc.docx';
+            link.download = 'Reo_Jefton_Resume.docx';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    }
+});
 // Smooth scroll with 100px offset for navbar links
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.topNav a[href^="#"]').forEach(function (link) {
