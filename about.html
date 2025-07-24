@@ -28,7 +28,7 @@
         <li class="right theme-toggle-flex"><button id="themeToggleBtn" class="theme-toggle-btn"
                 title="Toggle Theme">🌙</button></li>
         <li class="right color-picker-flex"><button id="accentColorBtn" class="accent-color-btn"
-                title="Select Accent Color">🎨</button><input type="color" id="accentColorPicker" /></li>
+                title="Select Accent Color">🎨</button></li>
         <li class="right download-flex"><button id="downloadResumeBtn" class="download-btn"
                 title="Download Resume">📥</button></li>
         <!-- <li class="mobile-hidden"><a href="./index2.html">HomeV2</a></li> -->
@@ -67,6 +67,15 @@
     <footer>
         <p class="footer-content">&copy; 2024 Reo Jefton. All rights reserved.</p>
     </footer>
+
+    <!-- Accent Color Picker Modal -->
+    <div id="accentColorModal" class="modal">
+        <div class="modal-content">
+            <label for="accentColorPicker">Select Accent Color</label>
+            <input type="color" id="accentColorPicker" />
+            <button id="closeAccentModal">Close</button>
+        </div>
+    </div>
 </body>
 
 </html>
