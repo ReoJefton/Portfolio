@@ -23,17 +23,23 @@ fetch('profileData.json')
         <a href="${data.linkedin}">${data.linkedin}</a>
       </h3>
       <p>${data.summary}</p>
-      <h4>TECHNICAL SKILLS</h4>
-      <ul>
-        ${data.skills.map(skillCat => `
-          <li><b>${skillCat.title} -</b> ${skillCat.skills.join(', ')}.</li>
-        `).join('')}
-      </ul>
+      <section id="skills" class="accordion-section">
+        <button class="accordion-toggle" type="button"><h4>TECHNICAL SKILLS</h4></button>
+        <div class="accordion-content" style="display:block;">
+          <ul>
+            ${data.skills.map(skillCat => `
+              <li><b>${skillCat.title} -</b> ${skillCat.skills.join(', ')}.</li>
+            `).join('')}
+          </ul>
+        </div>
+      </section>
     `;
 
-    // Experience Section
+    // Experience Section Accordion
     if (data.experience && data.experience.length > 0) {
-      html += `<h4 id="experience">PROFESSIONAL EXPERIENCE</h4>`;
+      html += `<section id="experience" class="accordion-section">
+        <button class="accordion-toggle" type="button"><h4>PROFESSIONAL EXPERIENCE</h4></button>
+        <div class="accordion-content" style="display:none;">`;
       data.experience.forEach(exp => {
         html += `<p><b>${exp.companyName}</b> <span style="font-weight:400;">(${exp.city}, ${exp.country})</span><br>`;
         html += `<b>${exp.designation}</b> | <span>${exp.startDate} - ${exp.endDate}</span></p>`;
@@ -54,20 +60,25 @@ fetch('profileData.json')
           html += `<b>Roles:</b><ul>${exp.responsibilities.map(r => `<li>${r}</li>`).join('')}</ul>`;
         }
       });
+      html += `</div></section>`;
     }
 
-    // Education Section
+    // Education Section Accordion
     if (data.education && data.education.length > 0) {
-      html += `<h4 id="education">EDUCATION</h4><ul>`;
+      html += `<section id="education" class="accordion-section">
+        <button class="accordion-toggle" type="button"><h4>EDUCATION</h4></button>
+        <div class="accordion-content" style="display:block;"><ul>`;
       data.education.forEach(edu => {
         html += `<li><b>${edu.degree}</b><br><b>${edu.institutionName}</b> <span style="font-weight:400;">(${edu.province}, ${edu.country})</span> | ${edu.period}</li>`;
       });
-      html += `</ul>`;
+      html += `</ul></div></section>`;
     }
 
-    // Projects Section
+    // Projects Section Accordion
     if (data.projects && data.projects.length > 0) {
-      html += `<h4 id="projects">PROJECTS</h4><ul>`;
+      html += `<section id="projects" class="accordion-section">
+        <button class="accordion-toggle" type="button"><h4>PROJECTS</h4></button>
+        <div class="accordion-content" style="display:block;"><ul>`;
       data.projects.forEach(proj => {
         html += `<li><b>${proj.name}</b> - ${proj.description}`;
         if (Array.isArray(proj.techStack)) {
@@ -78,8 +89,20 @@ fetch('profileData.json')
         if (proj.link) html += `<br><a href="${proj.link}">${proj.link}</a>`;
         html += `</li>`;
       });
-      html += `</ul>`;
+      html += `</ul></div></section>`;
     }
 
     parentDiv.innerHTML = html;
+
+    // Accordion JS
+    document.querySelectorAll('.accordion-toggle').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const content = this.nextElementSibling;
+        if (content.style.display === 'none' || content.style.display === '') {
+          content.style.display = 'block';
+        } else {
+          content.style.display = 'none';
+        }
+      });
+    });
   });

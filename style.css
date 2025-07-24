@@ -45,6 +45,7 @@ img {
     /* Prevent #parentDiv from overlapping navbar */
     margin-top: 60px;
     min-height: 85vh;
+    padding: 28px 16px;
 }
 
 /* Responsive navigation */
@@ -147,15 +148,17 @@ h3 {
     /* font-size: 16px !important;*/
     /* font-size: var(--bs-body-font-size) !important; */
     font-size: 1.2rem !important;
-
 }
 
 h4 {
     font-size: 18px;
 }
 
-#parentDiv {
-    padding: 28px 16px;
+.accordion-toggle {
+    background: inherit;
+    border: 0px;
+    padding: 0px 0px;
+    text-align: left;
 }
 
 /* Center footer content and match #parentDiv padding */
