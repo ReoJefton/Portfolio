@@ -24,7 +24,10 @@ fetch('profileData.json')
       </h3>
       <p>${data.summary}</p>
       <section id="skills" class="accordion-section">
-        <button class="accordion-toggle" type="button"><h4>TECHNICAL SKILLS</h4></button>
+        <button class="accordion-toggle" type="button">
+          <span class="accordion-arrow">&#9650;</span>
+          <h4>TECHNICAL SKILLS</h4>
+        </button>
         <div class="accordion-content" style="display:block;">
           <ul>
             ${data.skills.map(skillCat => `
@@ -38,8 +41,11 @@ fetch('profileData.json')
     // Experience Section Accordion
     if (data.experience && data.experience.length > 0) {
       html += `<section id="experience" class="accordion-section">
-        <button class="accordion-toggle" type="button"><h4>PROFESSIONAL EXPERIENCE</h4></button>
-        <div class="accordion-content" style="display:none;">`;
+        <button class="accordion-toggle" type="button">
+          <span class="accordion-arrow">&#9650;</span>
+          <h4>PROFESSIONAL EXPERIENCE</h4>
+        </button>
+        <div class="accordion-content" style="display:block;">`;
       data.experience.forEach(exp => {
         html += `<p><b>${exp.companyName}</b> <span style="font-weight:400;">(${exp.city}, ${exp.country})</span><br>`;
         html += `<b>${exp.designation}</b> | <span>${exp.startDate} - ${exp.endDate}</span></p>`;
@@ -66,7 +72,10 @@ fetch('profileData.json')
     // Education Section Accordion
     if (data.education && data.education.length > 0) {
       html += `<section id="education" class="accordion-section">
-        <button class="accordion-toggle" type="button"><h4>EDUCATION</h4></button>
+        <button class="accordion-toggle" type="button">
+          <span class="accordion-arrow">&#9650;</span>
+          <h4>EDUCATION</h4>
+        </button>
         <div class="accordion-content" style="display:block;"><ul>`;
       data.education.forEach(edu => {
         html += `<li><b>${edu.degree}</b><br><b>${edu.institutionName}</b> <span style="font-weight:400;">(${edu.province}, ${edu.country})</span> | ${edu.period}</li>`;
@@ -77,7 +86,10 @@ fetch('profileData.json')
     // Projects Section Accordion
     if (data.projects && data.projects.length > 0) {
       html += `<section id="projects" class="accordion-section">
-        <button class="accordion-toggle" type="button"><h4>PROJECTS</h4></button>
+        <button class="accordion-toggle" type="button">
+          <span class="accordion-arrow">&#9650;</span>
+          <h4>PROJECTS</h4>
+        </button>
         <div class="accordion-content" style="display:block;"><ul>`;
       data.projects.forEach(proj => {
         html += `<li><b>${proj.name}</b> - ${proj.description}`;
@@ -98,11 +110,24 @@ fetch('profileData.json')
     document.querySelectorAll('.accordion-toggle').forEach(btn => {
       btn.addEventListener('click', function () {
         const content = this.nextElementSibling;
+        const arrow = this.querySelector('.accordion-arrow');
         if (content.style.display === 'none' || content.style.display === '') {
           content.style.display = 'block';
+          if (arrow) arrow.innerHTML = '&#9650;'; // Up arrow
         } else {
           content.style.display = 'none';
+          if (arrow) arrow.innerHTML = '&#9660;'; // Down arrow
         }
       });
+      // Set initial arrow state
+      const content = btn.nextElementSibling;
+      const arrow = btn.querySelector('.accordion-arrow');
+      if (content && arrow) {
+        if (content.style.display === 'none' || content.style.display === '') {
+          arrow.innerHTML = '&#9660;'; // Down arrow
+        } else {
+          arrow.innerHTML = '&#9650;'; // Up arrow
+        }
+      }
     });
   });

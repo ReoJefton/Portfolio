@@ -155,10 +155,19 @@ h4 {
 }
 
 .accordion-toggle {
+    display: flex;
     background: inherit;
     border: 0px;
     padding: 0px 0px;
     text-align: left;
+}
+
+/* Accordion arrow styling */
+.accordion-arrow {
+    float: left;
+    font-size: 1.2em;
+    color: var(--accent-green);
+    transition: color 0.2s;
 }
 
 /* Center footer content and match #parentDiv padding */
