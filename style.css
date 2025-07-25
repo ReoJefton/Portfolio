@@ -145,11 +145,11 @@ body {
     font-weight: 600;
     font-size: 1.2em;
     /* color: #04AA6D; */
-    color: var(--accent-color);
+    color: var(--accent-color) !important;
     text-decoration: none;
     padding: 0px 16px;
     /* font-size: 22px; */
-    margin: auto;
+    /* margin: auto; */
 }
 
 ul.topNav,
@@ -241,7 +241,7 @@ h2,
 h4,
 .header2 {
     color: var(--accent-color) !important;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: 0px;
 }
 
