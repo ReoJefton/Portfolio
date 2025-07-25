@@ -6,11 +6,11 @@
     var savedColor = localStorage.getItem('accentColor');
     var defaultColor = '#04AA6D';
     var accentColor = savedColor || defaultColor;
-    document.documentElement.style.setProperty('--accent-green', accentColor);
+    document.documentElement.style.setProperty('--accent-color', accentColor);
     if (colorPicker) colorPicker.value = accentColor;
     if (colorPicker) {
         colorPicker.addEventListener('input', function () {
-            document.documentElement.style.setProperty('--accent-green', colorPicker.value);
+            document.documentElement.style.setProperty('--accent-color', colorPicker.value);
             localStorage.setItem('accentColor', colorPicker.value);
         });
     }
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }).join("");
                 }
                 var hex = btn.title || rgbToHex(color);
-                document.documentElement.style.setProperty('--accent-green', hex);
+                document.documentElement.style.setProperty('--accent-color', hex);
                 colorPicker.value = hex;
                 localStorage.setItem('accentColor', hex);
             });
