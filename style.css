@@ -28,8 +28,12 @@
     --card-radius: var(--outline-border-radius, var(--border-radius));
     --card-bg: #fff;
     --card-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    /* --card-shadow: 0 0px 0px rgba(0, 0, 0, 0.08); */
+
     --card-shadow-dark: 0 2px 16px rgba(255, 255, 255, 0.08);
+    /* --card-shadow-dark: 0 0px 0px rgba(255, 255, 255, 0.08); */
     /* --card-shadow-dark: 0 2px 16px rgba(249, 247, 247, 0.08); */
+    --card-shadow-dark-hover: 0 8px 20px rgba(255, 255, 255, 0.2), 0 4px 16px rgba(0, 0, 0, 0.08);
     /* --card-bg-dark: #222; */
     --card-bg-dark: #000000;
     /* --card-bg-dark: #262626; */
