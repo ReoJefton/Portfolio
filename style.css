@@ -229,13 +229,24 @@ ul.bottomNav li a.active {
     /* background: var(--nav-active-bg); */
     /* background-color: #04AA6D; */
     /* background-color: var(--accent-color); */
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    text-decoration-thickness: 3px;
-    text-decoration-color: var(--accent-color);
+    position: relative;
+    text-decoration: none;
     color: var(--accent-color);
     font-weight: 700;
     /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
+}
+
+ul.topNav li a.active::after,
+ul.bottomNav li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 8px);
+    height: 3px;
+    background: var(--accent-color) !important;
+    border-radius: 8px !important;
 }
 
 ul.topNav li.right,
@@ -288,7 +299,7 @@ h4 {
 
 .card:hover {
     /* box-shadow: 0 4px 32px rgba(0, 0, 0, 0.12); */
-    box-shadow: 0 8px 48px rgba(0, 0, 0, 0.20), 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--card-shadow-hover);
     /* transform: translateY(-2px) scale(1.000001); */
 }
 
