@@ -229,14 +229,18 @@ ul.bottomNav li a.active {
     /* background: var(--nav-active-bg); */
     /* background-color: #04AA6D; */
     /* background-color: var(--accent-color); */
-    position: relative;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--accent-color);
     color: var(--accent-color);
     font-weight: 700;
     /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
+    /* position: relative;
+    text-decoration: none; */
 }
 
-ul.topNav li a.active::after,
+/* ul.topNav li a.active::after,
 ul.bottomNav li a.active::after {
     content: '';
     position: absolute;
@@ -247,7 +251,7 @@ ul.bottomNav li a.active::after {
     height: 3px;
     background: var(--accent-color) !important;
     border-radius: 8px !important;
-}
+} */
 
 ul.topNav li.right,
 ul.bottomNav li.right {
