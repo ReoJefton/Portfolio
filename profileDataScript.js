@@ -26,7 +26,7 @@ fetch('profileData.json')
       <section id="skills" class="accordion-section card">
         <button class="accordion-toggle" type="button">
           <span class="accordion-arrow">&#9650;</span>
-          <h4>TECHNICAL SKILLS</h4>
+          <h4>Technical Skills</h4>
         </button>
         <div class="accordion-content open">
           <ul>
@@ -43,7 +43,7 @@ fetch('profileData.json')
       html += `<section id="experience" class="accordion-section card">
         <button class="accordion-toggle" type="button">
           <span class="accordion-arrow">&#9650;</span>
-          <h4>PROFESSIONAL EXPERIENCE</h4>
+          <h4>Professional Experience</h4>
         </button>
         <div class="accordion-content open">`;
       data.professionalExperience.forEach(exp => {
@@ -74,7 +74,7 @@ fetch('profileData.json')
       html += `<section id="education" class="accordion-section card">
         <button class="accordion-toggle" type="button">
           <span class="accordion-arrow">&#9650;</span>
-          <h4>EDUCATION</h4>
+          <h4>Education</h4>
         </button>
         <div class="accordion-content open"><ul>`;
       data.education.forEach(edu => {
@@ -88,7 +88,7 @@ fetch('profileData.json')
       html += `<section id="projects" class="accordion-section card">
         <button class="accordion-toggle" type="button">
           <span class="accordion-arrow">&#9650;</span>
-          <h4>PROJECTS</h4>
+          <h4>Projects</h4>
         </button>
         <div class="accordion-content open"><ul>`;
       data.projects.forEach(proj => {
