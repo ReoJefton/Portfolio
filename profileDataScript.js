@@ -16,11 +16,11 @@ fetch('profileData.json')
         </div>
       </div>
       <h3>
-        <a href="mailto:${data.email}">${data.email}</a><br>
-        <a href="tel:${data.phone}">${data.phone}</a><br>
-        ${data.location && typeof data.location === 'object' ? `${data.location.city}, ${data.location.province}` : data.location}<br>
+        <a href="mailto:${data.contact.email}">${data.contact.email}</a><br>
+        <a href="tel:${data.contact.phone}">${data.contact.phone}</a><br>
+        ${data.location.current.city}, ${data.location.current.country}<br>
         <a href="${data.github}">${data.github}</a><br>
-        <a href="${data.linkedin}">${data.linkedin}</a>
+        <a href="${data.contact.linkedin}">${data.contact.linkedin}</a>
       </h3>
       <p>${data.summary}</p>
       <section id="skills" class="accordion-section card">
@@ -30,7 +30,7 @@ fetch('profileData.json')
         </button>
         <div class="accordion-content open">
           <ul>
-            ${data.skills.map(skillCat => `
+            ${data.technicalSkills.map(skillCat => `
               <li><b>${skillCat.title} -</b> ${skillCat.skills.join(', ')}.</li>
             `).join('')}
           </ul>
@@ -39,14 +39,14 @@ fetch('profileData.json')
     `;
 
     // Experience Section Accordion
-    if (data.experience && data.experience.length > 0) {
+    if (data.professionalExperience && data.professionalExperience.length > 0) {
       html += `<section id="experience" class="accordion-section card">
         <button class="accordion-toggle" type="button">
           <span class="accordion-arrow">&#9650;</span>
           <h4>PROFESSIONAL EXPERIENCE</h4>
         </button>
         <div class="accordion-content open">`;
-      data.experience.forEach(exp => {
+      data.professionalExperience.forEach(exp => {
         html += `<p><b>${exp.companyName}</b> <span style="font-weight:400;">(${exp.city}, ${exp.country})</span><br>`;
         html += `<b>${exp.designation}</b> | <span>${exp.startDate} - ${exp.endDate}</span></p>`;
         if (exp.projects && exp.projects.length > 0) {

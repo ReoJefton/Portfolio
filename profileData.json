@@ -1,48 +1,132 @@
 {
-  "name": "REO JEFTON",
-  "title": "FULL STACK DEVELOPER",
+  "name": "Reo Jefton",
+  "title": "Full Stack Developer",
   "profileImage": "images/profilepic.JPG",
-  "email": "reojefton@outlook.com",
-  "phone": "+15197228671",
-  "location": { "city": "Toronto", "province": "Ontario" },
+  "contact": {
+    "email": "reojefton@outlook.com",
+    "phone": "+15197228671",
+    "linkedin": "https://linkedin.com/in/reojefton"
+  },
+  "location": {
+    "current": {
+      "city": "Toronto",
+      "country": "Canada"
+    },
+    "previous": {
+      "city": "Kanyakumari",
+      "country": "India"
+    }
+  },
   "github": "https://github.com/reojefton",
-  "linkedin": "https://www.linkedin.com/in/reojefton",
   "summary": "Adept Full Stack Developer with over 7 years of experience in Web and Database development. Have successfully led, managed and collaborated with teams to deliver high-quality solutions that meet clients’ needs and expectations. Have a passion for learning new skills, staying updated with the latest trends and implementing the best practices in my developer workflow.",
-  "skills": [
+  "technicalSkills": [
     {
       "title": "Front End Web Development",
-      "skills": ["React", "Redux", "HTML", "CSS", "JavaScript/ES6", "TypeScript", "jQuery", "Bootstrap", "Angular", "Shopify", "WordPress", "MaterialUI", "JSON", "XML", "SASS/SCSS", "Accessibility - WCAG 2.0+", "SEO", "Adobe Target", "Adobe Analytics"]
+      "skills": [
+        "React",
+        "Redux",
+        "HTML",
+        "CSS",
+        "JavaScript/ES6",
+        "TypeScript",
+        "jQuery",
+        "Bootstrap",
+        "Angular",
+        "Shopify",
+        "WordPress",
+        "MaterialUI",
+        "JSON",
+        "XML",
+        "SASS/SCSS",
+        "Accessibility - WCAG 2.0+",
+        "SEO",
+        "Adobe Target",
+        "Adobe Analytics"
+      ]
     },
     {
       "title": "Back End Web Development",
-      "skills": ["Node.js", "ASP.NET core MVC", "C#", ".NET", "REST API", "Microservices", "OAuth", "Auth0"]
+      "skills": [
+        "Node.js",
+        "ASP.NET core MVC",
+        "C#",
+        ".NET",
+        "REST API",
+        "Microservices",
+        "OAuth",
+        "Auth0"
+      ]
     },
     {
       "title": "Web Frameworks",
-      "skills": ["Next.js", "MERN", "MEAN", "ASP.NET Core"]
+      "skills": [
+        "Next.js",
+        "MERN",
+        "MEAN",
+        "ASP.NET Core"
+      ]
     },
     {
       "title": "Cloud Computing",
-      "skills": ["Microsoft Azure services like Azure Active Directory", "Load Balancer and Auto scale", "Web Services", "Edge functions and Blobs", "AWS services like EC2", "S3", "Aurora", "Batch", "Lambda"]
+      "skills": [
+        "Microsoft Azure services like Azure Active Directory",
+        "Load Balancer and Auto scale",
+        "Web Services",
+        "Edge functions and Blobs",
+        "AWS services like EC2",
+        "S3",
+        "Aurora",
+        "Batch",
+        "Lambda"
+      ]
     },
     {
       "title": "DevOps",
-      "skills": ["Azure DevOps", "Jenkins", "Docker", "Kubernetes", "CI/CD"]
+      "skills": [
+        "Azure DevOps",
+        "Jenkins",
+        "Docker",
+        "Kubernetes",
+        "CI/CD"
+      ]
     },
     {
       "title": "Mobile Development",
-      "skills": ["React Native (Android, iOS and Windows)", "Android native", "Windows UWP/WinUI", "MAUI (Android, iOS and Windows)", "IDE - Visual Studio Code", "Visual Studio", "Android Studio"]
+      "skills": [
+        "React Native (Android, iOS and Windows)",
+        "Android native",
+        "Windows UWP/WinUI",
+        "MAUI (Android, iOS and Windows)",
+        "IDE - Visual Studio Code",
+        "Visual Studio",
+        "Android Studio"
+      ]
     },
     {
       "title": "Database Development",
-      "skills": ["Microsoft SQL Server", "MySQL", "MongoDB", "SSRS", "SSIS", "Azure SQL", "PostgreSQL"]
+      "skills": [
+        "Microsoft SQL Server",
+        "MySQL",
+        "MongoDB",
+        "SSRS",
+        "SSIS",
+        "Azure SQL",
+        "PostgreSQL"
+      ]
     },
     {
       "title": "Other Skills",
-      "skills": ["Agile and Waterfall SDLC methodologies", "Salesforce", "Test-Driven Development", "Git", "UI and UX Design and prototyping (Figma, Adobe XD and InVision)", "Project Management"]
+      "skills": [
+        "Agile and Waterfall SDLC methodologies",
+        "Salesforce",
+        "Test-Driven Development",
+        "Git",
+        "UI and UX Design and prototyping (Figma, Adobe XD and InVision)",
+        "Project Management"
+      ]
     }
   ],
-  "experience": [
+  "professionalExperience": [
     {
       "companyName": "Epicor",
       "city": "Toronto",
@@ -53,7 +137,15 @@
       "projects": [
         {
           "name": "Field Service Management (FSM) web portal and MAUI app for Android and iOS",
-          "techStack": ["ASP.NET Core MVC", "jQuery", "React", "Azure", "Microservices Architecture", "REST API", "SQL Server"]
+          "techStack": [
+            "ASP.NET Core MVC",
+            "jQuery",
+            "React",
+            "Azure",
+            "Microservices Architecture",
+            "REST API",
+            "SQL Server"
+          ]
         }
       ],
       "responsibilities": [
@@ -77,7 +169,16 @@
       "projects": [
         {
           "name": "Consumer sites for Bell Canada and Lucky Mobile, Internal CMS Web portal for Bell Canada",
-          "techStack": ["React", "jQuery", "Node.js", ".NET Core", "Microservices Architecture", "DevOps", "REST API", "SQL Server"]
+          "techStack": [
+            "React",
+            "jQuery",
+            "Node.js",
+            ".NET Core",
+            "Microservices Architecture",
+            "DevOps",
+            "REST API",
+            "SQL Server"
+          ]
         }
       ],
       "responsibilities": [
@@ -103,15 +204,34 @@
       "projects": [
         {
           "name": "Now Management Studio",
-          "techStack": ["React", "Angular", "Node.js", ".NET Core", "Microservices Architecture", "REST API", "SQL Server", "MongoDB", "AWS"]
+          "techStack": [
+            "React",
+            "Angular",
+            "Node.js",
+            ".NET Core",
+            "Microservices Architecture",
+            "REST API",
+            "SQL Server",
+            "MongoDB",
+            "AWS"
+          ]
         },
         {
           "name": "WARS - Data warehouse, data migration and Business Intelligence for Allianz Insurance",
-          "techStack": ["C#", "SQL Server", "SSRS", "SSIS", "Azure DevOps", "Power BI"]
+          "techStack": [
+            "C#",
+            "SQL Server",
+            "SSRS",
+            "SSIS",
+            "Azure DevOps",
+            "Power BI"
+          ]
         },
         {
           "name": "Shopify ecommerce site - Customize site to suite brand and add functionality using add-ons.",
-          "techStack": ["Shopify"]
+          "techStack": [
+            "Shopify"
+          ]
         }
       ],
       "responsibilities": [
@@ -134,7 +254,12 @@
       "projects": [
         {
           "name": "InstaROI",
-          "techStack": ["ASP.NET core MVC", "React", "Microsoft Azure", "SQL Server"]
+          "techStack": [
+            "ASP.NET core MVC",
+            "React",
+            "Microsoft Azure",
+            "SQL Server"
+          ]
         }
       ],
       "responsibilities": [
@@ -152,7 +277,19 @@
       "projects": [
         {
           "name": "General",
-          "techStack": ["HTML", "CSS", "Bootstrap", "Angular", "Node.js", "ASP .NET", "JavaScript", "jQuery", "AJAX", "SQL Server", "MySQL"]
+          "techStack": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "Angular",
+            "Node.js",
+            "ASP .NET",
+            "JavaScript",
+            "jQuery",
+            "AJAX",
+            "SQL Server",
+            "MySQL"
+          ]
         }
       ],
       "responsibilities": [
@@ -164,7 +301,7 @@
       ]
     }
   ],
-   "education": [
+  "education": [
     {
       "degree": "Computer Application Security",
       "institutionName": "Conestoga College",
@@ -191,49 +328,97 @@
     {
       "name": "Social Network Web App",
       "description": "A full-featured social network web application.",
-      "techStack": ["MERN stack", "React", "Redux", "Node.js", "MongoDB", "Heroku", "MaterialUI"],
+      "techStack": [
+        "MERN stack",
+        "React",
+        "Redux",
+        "Node.js",
+        "MongoDB",
+        "Heroku",
+        "MaterialUI"
+      ],
       "link": "https://github.com/ReoJefton/ReoSocial"
     },
     {
       "name": "Noorul Islam Polytechnic College Website",
       "description": "Official website for Noorul Islam Polytechnic College.",
-      "techStack": ["Next.js", "Tailwind CSS", "TypeScript"],
+      "techStack": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
       "link": "https://nipc.in/"
     },
     {
       "name": "InstaROI and Kinetic GPO PWA (NexGen Marketing Group)",
       "description": "Progressive web apps for marketing and procurement.",
-      "techStack": ["ASP.NET core MVC", "React", "Microsoft Azure", "SQL Server"],
+      "techStack": [
+        "ASP.NET core MVC",
+        "React",
+        "Microsoft Azure",
+        "SQL Server"
+      ],
       "link": "https://github.com/ReoJefton/InstaROI-NetCoreWeb"
     },
     {
       "name": "WellBeings",
       "description": "Wellness tracking and management .NET Core Web App.",
-      "techStack": ["C#", "ASP.Net Core MVC", "Entity Framework"],
+      "techStack": [
+        "C#",
+        "ASP.Net Core MVC",
+        "Entity Framework"
+      ],
       "link": "https://github.com/reojefton/WellBeings-NetCoreApp"
     },
     {
       "name": "Now management Studio - CMS (ISN Technologies)",
       "description": "Custom CMS for business management.",
-      "techStack": ["React", "Angular", "Node.js", ".NET Core", "Microservices Architecture", "REST API", "SQL Server", "MongoDB", "AWS"],
+      "techStack": [
+        "React",
+        "Angular",
+        "Node.js",
+        ".NET Core",
+        "Microservices Architecture",
+        "REST API",
+        "SQL Server",
+        "MongoDB",
+        "AWS"
+      ],
       "link": ""
     },
     {
       "name": "Web Portfolio",
       "description": "Personal portfolio website.",
-      "techStack": ["HTML", "CSS", "JS", "GitHub Pages", "PWA"],
+      "techStack": [
+        "HTML",
+        "CSS",
+        "JS",
+        "GitHub Pages",
+        "PWA"
+      ],
       "link": "https://reojefton.github.io/PortfolioRJ/"
     },
     {
       "name": "Conestoga Portal UWP App",
       "description": "Access web portals and take notes with built-in password manager.",
-      "techStack": ["C#", ".NET Core", "SQL Server"],
+      "techStack": [
+        "C#",
+        ".NET Core",
+        "SQL Server"
+      ],
       "link": "https://www.microsoft.com/en-ca/p/conestoga-portal/9p45t4g9gqf3?activetab=pivot:overviewtab"
     },
     {
       "name": "10Launcher",
       "description": "Chromium extension for managing recently visited sites and favorites.",
-      "techStack": ["React", "HTML", "CSS", "Bootstrap", "JavaScript", "TypeScript"],
+      "techStack": [
+        "React",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript",
+        "TypeScript"
+      ],
       "link": "https://microsoftedge.microsoft.com/addons/detail/10launcher/lohfjfafljfmninkapddiidjinilohkc"
     }
   ]
