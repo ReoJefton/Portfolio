@@ -22,7 +22,7 @@ fetch('profileData.json')
         <a href="${data.github}">${data.github}</a><br>
         <a href="${data.contact.linkedin}">${data.contact.linkedin}</a>
       </h3>
-      <p>${data.summary}</p>
+      <p class="card">${data.summary}</p>
       <section id="skills" class="accordion-section card">
         <button class="accordion-toggle" type="button">
           <span class="accordion-arrow">&#9650;</span>
