@@ -307,21 +307,24 @@
       "institutionName": "Conestoga College",
       "province": "Kitchener",
       "country": "Canada",
-      "period": "May 2018 - December 2018"
+      "startDate": "May 2018",
+      "endDate": "December 2018"
     },
     {
       "degree": "Computer Application Development",
       "institutionName": "Conestoga College",
       "province": "Kitchener",
       "country": "Canada",
-      "period": "September 2017 - April 2018"
+      "startDate": "September 2017",
+      "endDate": "April 2018"
     },
     {
       "degree": "Bachelor's in Engineering - Computer Science",
       "institutionName": "National Engineering college",
       "province": "Kovilpatti",
       "country": "India",
-      "period": "June 2012 - May 2016"
+      "startDate": "June 2012",
+      "endDate": "May 2016"
     }
   ],
   "projects": [

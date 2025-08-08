@@ -78,7 +78,8 @@ fetch('profileData.json')
         </button>
         <div class="accordion-content open"><ul>`;
       data.education.forEach(edu => {
-        html += `<li><b>${edu.degree}</b><br><b>${edu.institutionName}</b> <span style="font-weight:400;">(${edu.province}, ${edu.country})</span> | ${edu.period}</li>`;
+        const eduPeriod = (edu.startDate && edu.endDate) ? `${edu.startDate} - ${edu.endDate}` : (edu.period || '');
+        html += `<li><b>${edu.degree}</b><br><b>${edu.institutionName}</b> <span style="font-weight:400;">(${edu.province}, ${edu.country})</span> | ${eduPeriod}</li>`;
       });
       html += `</ul></div></section>`;
     }
