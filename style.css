@@ -93,6 +93,23 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Inline SVG icon styles */
+.contact-info .icon-wrapper {
+    display: inline-flex;
+    width: 1.15em;
+    height: 1.15em;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.contact-info .icon {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    display: inline-block;
+}
+
 a {
     color: #000000;
     text-decoration: none;
