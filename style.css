@@ -9,6 +9,7 @@
     /* --theme-background-color: #181818; */
     --theme-background-color: #f4f4f4;
     --theme-background-color-dark: #101010;
+    --color-text-dark: #d1d1d1;
 
     /* --body-bg: #f3f3f3;
     --body-bg-dark: #101010; */
@@ -75,13 +76,22 @@ body {
         Arial,
         Helvetica,
         sans-serif;
-    line-height: 1.428;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 20px;
+    /* line-height: 1.428; */
 }
 
 /* html {
     scroll-behavior: smooth;
     scroll-padding-top: 90px; 
 } */
+
+body {
+    margin: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: #f4f4f4;
+}
 
 a {
     color: #000000;
@@ -137,12 +147,6 @@ img {
     padding: 0 24px;
     /* height: 64px; */
     /* z-index: 100; */
-}
-
-body {
-    margin: 0;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    background-color: #f4f4f4;
 }
 
 .li-app-name {
@@ -259,6 +263,12 @@ ul.bottomNav li.right {
     float: right;
 }
 
+
+h1,
+h2 {
+    line-height: 1.2;
+}
+
 h1,
 h2,
 h4,
@@ -275,15 +285,28 @@ h4,
 }
 
 h3 {
-    font-weight: bold;
+    /* font-weight: bold;*/
+    font-weight: 500;
     margin: 0px;
     /* font-size: 16px !important;*/
     /* font-size: var(--bs-body-font-size) !important; */
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
 }
 
 h4 {
     font-size: 18px;
+}
+
+hr {
+    border: none;
+    /* Removes the default 3D border */
+    height: 1px;
+    /* Sets the thickness of the line */
+    background-color: #787878;
+    /* Sets the color (e.g., red) */
+    /* opacity: 40%; */
+    /* border-top: 1px solid var(--divider-color); */
+    /* margin: 10px 0; */
 }
 
 /* Card styling for accordion sections */
@@ -315,8 +338,23 @@ h4 {
     transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.accordion-content b {
+    font-weight: 550;
+    /* font-weight: normal; */
+}
+
 .accordion-content.open {
     /* max-height will be set inline by JS to scrollHeight */
+}
+
+.accordion-content ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.roles-content {
+    list-style-type: disc !important;
+    padding-left: 20px !important;
 }
 
 .accordion-toggle {
@@ -409,7 +447,7 @@ h4 {
 /* Bottom navigation on mobile */
 @media only screen and (max-width: 480px) {
     #parentDiv {
-        padding: 12px;
+        padding: 12px 0px;
         width: calc(100% - 24px);
     }
 

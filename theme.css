@@ -1,7 +1,8 @@
 body.dark-theme {
     /* background: #181818; */
     background-color: var(--theme-background-color-dark);
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: var(--color-text-dark);
 }
 
 body.dark-theme .modal {
@@ -21,7 +22,8 @@ body.dark-theme .modal-content {
 
 .dark-theme a,
 .dark-theme .topnav a {
-    color: #f1f1f1;
+    /* color: #f1f1f1; */
+    color: var(--color-text-dark);
     /* color: var(--accent-green) !important; */
 }
 

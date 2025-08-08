@@ -64,7 +64,7 @@ fetch('profileData.json')
           });
         }
         if (exp.responsibilities && exp.responsibilities.length > 0) {
-          html += `<b>Roles:</b><ul>${exp.responsibilities.map(r => `<li>${r}</li>`).join('')}</ul>`;
+          html += `<b>Roles:</b><ul class="roles-content">${exp.responsibilities.map(r => `<li>${r}</li>`).join('')}</ul>`;
         }
         html += `${i < arr.length - 1 ? '<hr>' : ''}`;
       });
