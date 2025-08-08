@@ -15,12 +15,12 @@ fetch('profileData.json')
           <img class="profile-pic" src="${data.profileImage}" alt="Profile Picture" width="100" height="100">
         </div>
       </div>
-      <h3>
-        <a href="mailto:${data.contact.email}">${data.contact.email}</a><br>
-        <a href="tel:${data.contact.phone}">${data.contact.phone}</a><br>
-        ${data.location.current.city}, ${data.location.current.country}<br>
-        <a href="${data.github}">${data.github}</a><br>
-        <a href="${data.contact.linkedin}">${data.contact.linkedin}</a>
+      <h3 class="contact-info">
+        <span aria-hidden="true">✉️</span> <a href="mailto:${data.contact.email}">${data.contact.email}</a><br>
+        <span aria-hidden="true">📞</span> <a href="tel:${data.contact.phone}">${data.contact.phone}</a><br>
+        <span aria-hidden="true">📍</span> ${data.location.current.city}, ${data.location.current.country}<br>
+        <span aria-hidden="true">🐙</span> <a href="${data.github}">${data.github}</a><br>
+        <span aria-hidden="true">🔗</span> <a href="${data.contact.linkedin}">${data.contact.linkedin}</a>
       </h3>
       <p class="card">${data.summary}</p>
       <section id="skills" class="accordion-section card">
