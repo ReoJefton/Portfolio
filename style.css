@@ -299,11 +299,8 @@ h4 {
 
 hr {
     border: none;
-    /* Removes the default 3D border */
-    height: 1px;
-    /* Sets the thickness of the line */
+    height: 0.5px;
     background-color: #787878;
-    /* Sets the color (e.g., red) */
     /* opacity: 40%; */
     /* border-top: 1px solid var(--divider-color); */
     /* margin: 10px 0; */
