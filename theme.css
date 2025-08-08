@@ -62,6 +62,10 @@ body.dark-theme .modal-content {
     box-shadow: var(--card-shadow-dark-hover);
 }
 
+.dark-theme .submit-btn:hover {
+    box-shadow: var(--card-shadow-dark-hover);
+}
+
 /* Toggle button background based on current theme */
 /*body.dark-theme .theme-toggle-btn {
     background: #222;

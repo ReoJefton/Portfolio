@@ -552,6 +552,26 @@ hr {
     }
 }
 
+.submit-btn {
+    background: var(--accent-color);
+    /* color: #fff; */
+    color: var(--btn-text);
+    font-weight: bold;
+    border-radius: var(--btn-radius);
+    /* box-shadow: var(--btn-shadow); */
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    width: -webkit-fill-available;
+    border: 0px;
+}
+
+.submit-btn:hover {
+    /* background: darken(var(--accent-color), 55%); */
+    /* background: var(--accent-color); */
+    box-shadow: var(--card-shadow-hover);
+    /* border: 2px solid var(--accent-color); */
+}
 
 /* Theme Toggle Button and other navbar button styles */
 .theme-toggle-btn,
