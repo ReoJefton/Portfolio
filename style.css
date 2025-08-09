@@ -9,7 +9,8 @@
     /* --theme-background-color: #181818; */
     --theme-background-color: #f4f4f4;
     --theme-background-color-dark: #101010;
-    --color-text-dark: #d1d1d1;
+    --color-text: #000000;
+    --color-text-dark: #e7e9ea;
 
     /* --body-bg: #f3f3f3;
     --body-bg-dark: #101010; */
@@ -79,6 +80,7 @@ body {
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
+    color: var(--color-text);
     /* line-height: 1.428; */
 }
 
